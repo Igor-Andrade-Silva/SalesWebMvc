@@ -79,7 +79,7 @@ namespace SalesWebMvc.Controllers
 
             return View(obj);
         }
-        public IActionResult Edit(int id)
+        public IActionResult Edit(int? id)
             { if (id == null)
             {
                 return RedirectToAction(nameof(Error), new { message = "Id not provided" });
